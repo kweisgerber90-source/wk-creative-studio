@@ -1,0 +1,5 @@
+[
+  { "id": "white", "name": "White", "description": "Reines Freisteller‑Setup", "priceFrom": 199 },
+  { "id": "white_lifestyle", "name": "White + Lifestyle", "description": "Freisteller + Ambiente", "priceFrom": 299 },
+  { "id": "white_infographic", "name": "White + Infografik", "description": "Freisteller + Infografiken", "priceFrom": 349 }
+]

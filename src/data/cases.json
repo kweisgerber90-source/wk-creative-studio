@@ -1,0 +1,4 @@
+[
+  { "id": "case1", "title": "Küchenmesser", "before": "/images/cases/messer-before.jpg", "after": "/images/cases/messer-after.jpg" },
+  { "id": "case2", "title": "Wasserflasche", "before": "/images/cases/bottle-before.jpg", "after": "/images/cases/bottle-after.jpg" }
+]
