@@ -1,0 +1,9 @@
+[
+  { "id": "white", "name": "White" },
+  { "id": "lifestyle", "name": "Lifestyle" },
+  { "id": "infographic", "name": "Infografik" },
+  { "id": "mini_video", "name": "Mini‑Video" },
+  { "id": "spin", "name": "360°" },
+  { "id": "rush", "name": "Rush 48h" },
+  { "id": "ab_main", "name": "A/B Hauptbild" }
+]
