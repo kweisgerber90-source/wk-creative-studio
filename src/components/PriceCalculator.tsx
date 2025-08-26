@@ -1,5 +1,5 @@
 "use client"
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { Button } from '@/components/ui/button'
 
 export type CalculatorResult = {
@@ -24,6 +24,10 @@ export default function PriceCalculator({ onChange }: { onChange?: (r: Calculato
     if (rush) base = Math.round(base * 1.4)
     return base
   }, [skuCount, angles, rush, abMain, miniVideo, spin])
+
+  useEffect(() => {
+    if (onChange) onChange({ total })
+  }, [total, onChange])
 
   return (
     <div className="rounded-lg border p-6">
@@ -57,9 +61,6 @@ export default function PriceCalculator({ onChange }: { onChange?: (r: Calculato
         <p className="text-2xl font-bold">Gesamt: €{total}</p>
         <p className="text-xs text-slate-500">§19 UStG – keine USt. ausgewiesen</p>
       </div>
-      {onChange && (
-        <div className="sr-only" aria-live="polite">{onChange({ total }), ''}</div>
-      )}
       <div className="mt-4"><Button>Zum Brief</Button></div>
     </div>
   )
